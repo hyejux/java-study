@@ -17,5 +17,6 @@ public class StreamAPI_ex6 {
 
         System.out.println(filteredWords);
 
+
     }
 }

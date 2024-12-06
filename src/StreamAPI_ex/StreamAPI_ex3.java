@@ -13,10 +13,11 @@ public class StreamAPI_ex3 {
          */
 
         List<String> words = Arrays.asList("java", "stream", "api");
-//
-//        List<String> firstWords = words.stream()
-//                .map(word -> word.substring(0,1))
-//                .toArray();
+
+        List<Character> firstLetters = words.stream()
+                .map(word -> word.charAt(0))
+                .collect(Collectors.toList());
+        System.out.println(firstLetters); // 출력: [j, s, a]
 
 
     }

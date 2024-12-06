@@ -17,5 +17,12 @@ public class StreamAPI_ex1 {
                 .filter(num -> num % 2 == 0)
                 .forEach(System.out::println);
 
+        /**
+         * List<Integer> evenNumbers = numbers.stream()
+         *                                            .filter(n -> n % 2 == 0)
+         *                                            .collect(Collectors.toList());
+         *
+         *         System.out.println(evenNumbers); // 출력: [2, 4, 6, 8, 10]
+         */
     }
 }

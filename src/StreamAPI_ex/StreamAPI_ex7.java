@@ -15,11 +15,11 @@ public class StreamAPI_ex7 {
 
         List<String> words = Arrays.asList("apple", "banana", "cherry", "fig", "grape");
 
-        List<String> newWords = words.stream()
+        Long count = words.stream()
                 .filter(word -> word.length() >= 5)
-                .collect(Collectors.toList());
+                .count();
 
-        System.out.println(newWords.stream().count());
+        System.out.println(count);
 
 
 
