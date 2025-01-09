@@ -1,0 +1,21 @@
+직원 관리 시스템 (콘솔)
+
+직원 추가
+직원 목록 보기
+직원 삭제
+직원 정보 업데이트
+프로그램 종료
+
+유효성 검사: 동일한 ID를 가진 직원 등록 방지.
+파일 입출력: 직원 데이터를 파일에 저장 및 불러오기.
+정렬 기능: 직원 목록을 이름이나 ID 순서로 정렬.
+예외 처리: 잘못된 입력값에 대한 처리 (try-catch 활용).
+
+
+Exception in thread "main" java.util.ConcurrentModificationException
+	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1043)
+	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:997)
+	at com.ju.simpleprograms.employeeManage.EmployeeManager.employeeDelete(EmployeeManager.java:30)
+	at com.ju.simpleprograms.employeeManage.EmployeeManagementSystem.main(EmployeeManagementSystem.java:45)
+
+반복 중 수정되면 예외가 발생하버림 Iterator 반복자를 통해 안전하게 수정한다.
