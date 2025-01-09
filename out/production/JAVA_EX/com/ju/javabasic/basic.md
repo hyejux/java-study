@@ -47,3 +47,11 @@
 * concat(String str) : 두 문자열을 연결합니다.
 * isEmpty() : 문자열이 비어 있는지 확인합니다.
 * toCharArray() : 문자열을 문자 배열로 변환합니다.
+
+## 메서드
+
+` public static int sum(int a, int b){}`
+* 클래스 메서드 : 객체 생성 없이 직접 호출 가능 (클래스 로딩시 메모리에 적재)
+
+`public int sum(int a, int b){}`
+* 인스턴스 메서드 : 객체를 생성해야 호출 가능 (객체 생성후 메모리에 할당)
