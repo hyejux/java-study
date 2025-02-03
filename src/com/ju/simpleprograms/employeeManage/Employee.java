@@ -5,6 +5,7 @@ public class Employee {
     String id;
     String name;
     String position;
+    int salary;
 
     public Employee() {
 
@@ -39,4 +40,11 @@ public class Employee {
         this.position = position;
     }
 
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
 }
