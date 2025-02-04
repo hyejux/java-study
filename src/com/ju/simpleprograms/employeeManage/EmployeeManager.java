@@ -17,8 +17,13 @@ public class EmployeeManager {
     // 직원 추가
     public void employeeAdd(Employee e) {
 
-        employees.add(e);
-        System.out.println("직원 추가가 완료되었습니다.");
+
+        if(e.getName().equals("레오")){
+            return;
+        }else{
+            employees.add(e);
+            System.out.println("직원 추가가 완료되었습니다.");
+        }
     }
 
     // 직원 삭제
@@ -86,7 +91,9 @@ public class EmployeeManager {
         return false; // 직원 아이디가 존재하지 않으면 false;
     }
 
-
+    public int getEmployeeCount() {
+        return employees.size();
+    }
 
 
 }
